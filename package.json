@@ -1,0 +1,22 @@
+{
+  "name": "serverless-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "aws-sdk": "^2.839.0",
+    "axios": "^0.21.1",
+    "serverless-offline": "^6.8.0"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "serverless": "^2.25.1"
+  },
+  "scripts": {
+    "test": "jest",
+    "start": "sls offline start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

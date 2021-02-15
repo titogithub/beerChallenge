@@ -1,0 +1,17 @@
+service: coding-challenge
+
+provider:
+  name: aws
+  runtime: nodejs10.x
+
+functions:
+  hello:
+    handler: ./lambdas/endpoints/beer/handler.findTwoBeers
+    events:
+      - http:
+          path: findtwobeers
+          method: POST
+          cors: true
+
+plugins:
+  - serverless-offline
